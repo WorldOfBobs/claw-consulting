@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="-ZQ8UxmJpV_vX1BFuTEZEZAE-wcv92IsGFuvPEU3tg4" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Claw Consulting | Professional OpenClaw Setup &amp; AI Assistant Installation</title>
-  <meta name="description" content="Expert OpenClaw installation, configuration, and AI assistant setup. Remote and in-person packages for businesses worldwide. Get your AI infrastructure running right the first time." />
-  <meta name="keywords" content="OpenClaw, OpenClaw install, OpenClaw setup, OpenClaw configuration, AI assistant installation, AI setup service, OpenClaw help, AI consulting" />
+  <title>Claw Consulting | Practical AI Systems, Automations &amp; Dashboards</title>
+  <meta name="description" content="We build practical AI systems, automations, and local dashboards for real businesses. Useful workflows, clean interfaces, and AI that earns its keep." />
+  <meta name="keywords" content="AI consulting, AI automation, local AI dashboard, business automation, workflow automation, AI assistants, OpenClaw consulting" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://worldofbobs.github.io/openclaw-consulting/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Claw Consulting | Professional OpenClaw Setup &amp; AI Assistant Installation" />
-  <meta property="og:description" content="Expert OpenClaw installation, configuration, and AI assistant setup. Remote and in-person packages for businesses worldwide." />
+  <meta property="og:title" content="Claw Consulting | Practical AI Systems, Automations &amp; Dashboards" />
+  <meta property="og:description" content="AI tools, automations, and local dashboards built for real business workflows — not demo fluff." />
   <meta property="og:url" content="https://worldofbobs.github.io/openclaw-consulting/" />
 
   <!-- Schema.org structured data -->
@@ -22,12 +22,12 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Claw Consulting",
-    "description": "Professional OpenClaw installation, AI assistant setup, and automation consulting for businesses worldwide.",
+    "description": "Practical AI systems, workflow automations, and local dashboards for businesses that want useful tools instead of vague AI promises.",
     "url": "https://worldofbobs.github.io/openclaw-consulting/",
     "email": "hello@clawconsulting.ai",
     "areaServed": "Worldwide",
-    "serviceType": ["OpenClaw Installation", "AI Assistant Setup", "Business Automation Consulting"],
-    "priceRange": "$2000 - $10000+"
+    "serviceType": ["AI Assistants", "Workflow Automation", "Internal Dashboards", "Local AI Systems"],
+    "priceRange": "$2,000+"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -500,6 +500,165 @@
     .faq-q { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--white); margin-bottom: 12px; line-height: 1.4; }
     .faq-a { font-size: 0.95rem; color: var(--gray); line-height: 1.75; }
 
+    .dashboard-shell {
+      margin-top: 56px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(20,20,20,0.98) 0%, rgba(10,10,10,1) 100%);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+    }
+
+    .dashboard-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.015);
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .dashboard-title {
+      font-size: 0.82rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .dashboard-status {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1px;
+      background: var(--border);
+    }
+
+    .dashboard-panel {
+      background: var(--dark);
+      padding: 24px;
+    }
+
+    .dashboard-panel h3 {
+      font-size: 1rem;
+      margin-bottom: 18px;
+      color: var(--white);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .metric-card {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.015);
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .metric-label {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .metric-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .metric-value small {
+      font-size: 0.8rem;
+      color: var(--gold);
+      font-family: 'Inter', sans-serif;
+      margin-left: 4px;
+    }
+
+    .feed-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .feed-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.015);
+    }
+
+    .feed-item strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.92rem;
+    }
+
+    .feed-item span {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      display: block;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .process-card {
+      border: 1px solid var(--border);
+      background: var(--dark);
+      padding: 24px 20px;
+      min-height: 180px;
+    }
+
+    .process-step {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .process-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+
+    @media (max-width: 900px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+      .metric-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .process-grid { grid-template-columns: 1fr; }
+    }
+
     .contact-info h3 { font-size: 1.5rem; margin-bottom: 16px; line-height: 1.3; }
 
     .contact-info p {
@@ -627,10 +786,10 @@
       <div class="nav-logo"><span>Claw</span> Consulting</div>
     </div>
     <ul class="nav-links">
-      <li><a href="#why">About</a></li>
-      <li><a href="#packages">Packages</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      <li><a href="#why">Value</a></li>
+      <li><a href="#packages">Solutions</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#contact" class="nav-cta">Let’s Talk</a></li>
     </ul>
   </nav>
 
@@ -671,27 +830,27 @@
         </div>
       </div>
 
-      <h1>Your AI setup<br>should work as hard<br>as <em>you do.</em></h1>
+      <h1>AI systems that<br>actually <em>save time.</em></h1>
 
-      <p class="hero-sub">We deploy, configure, and optimize personal AI infrastructure for individuals and businesses, with the expertise and judgment that only comes from doing this for over a decade.</p>
+      <p class="hero-sub">We build practical AI tools, automations, and local dashboards for real businesses — useful workflows, clean interfaces, and AI that earns its keep.</p>
 
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Schedule a Consultation</a>
-        <span class="hero-secondary">Available worldwide &nbsp;·&nbsp; Remote &amp; in-person</span>
+        <a href="#contact" class="btn-primary">Book a Consultation</a>
+        <span class="hero-secondary">Remote-first &nbsp;·&nbsp; Built for real operations, not demo fluff</span>
       </div>
 
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-num">10<span>+</span></div>
-          <p>Years combined AI experience</p>
+          <div class="stat-num">AI</div>
+          <p>Assistants tailored to your workflow</p>
         </div>
         <div class="stat-item">
-          <div class="stat-num">3</div>
-          <p>Tailored setup packages</p>
+          <div class="stat-num">Ops</div>
+          <p>Automations that remove manual work</p>
         </div>
         <div class="stat-item">
-          <div class="stat-num">&#8734;</div>
-          <p>Locations served worldwide</p>
+          <div class="stat-num">UI</div>
+          <p>Dashboards your team will actually use</p>
         </div>
       </div>
     </div>
@@ -702,31 +861,31 @@
   <!-- WHY US -->
   <div id="why">
     <div class="section">
-      <div class="section-label">Why Claw</div>
-      <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); max-width: 580px; margin-bottom: 0;">
-        Two partners. A decade of real-world AI experience. Zero compromises.
+      <div class="section-label">Value</div>
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); max-width: 680px; margin-bottom: 0;">
+        Built for useful, boring, high-impact work.
       </h2>
 
       <div class="why-grid">
         <div class="why-cell">
           <div class="icon">⚡</div>
-          <h3>Optimized From Day One</h3>
-          <p>We don't hand you a manual and wish you luck. We configure your system end-to-end, tuned to your workflow, your team, and your goals.</p>
+          <h3>Practical Over Performative</h3>
+          <p>Most AI sites sell magic. We build systems that answer messages faster, automate repetitive work, and remove obvious friction from the day-to-day.</p>
+        </div>
+        <div class="why-cell">
+          <div class="icon">🧩</div>
+          <h3>Fits Your Existing Workflow</h3>
+          <p>We connect forms, inboxes, spreadsheets, APIs, and internal tools into one usable flow instead of asking your team to learn a new religion.</p>
+        </div>
+        <div class="why-cell">
+          <div class="icon">📊</div>
+          <h3>Visible, Not Hidden</h3>
+          <p>We like clean interfaces and operational clarity. If a system matters, you should be able to see what it’s doing and control it without digging through logs.</p>
         </div>
         <div class="why-cell">
           <div class="icon">🔐</div>
-          <h3>You Own Your Infrastructure</h3>
-          <p>Complete key rotation guidance after every setup. Your API keys, your data, your system. No middlemen, no lock-in.</p>
-        </div>
-        <div class="why-cell">
-          <div class="icon">🤖</div>
-          <h3>Automation That Actually Works</h3>
-          <p>From simple task agents to full business workflow automation, we build AI tools that integrate seamlessly into how you already operate.</p>
-        </div>
-        <div class="why-cell">
-          <div class="icon">🌍</div>
-          <h3>Worldwide Reach</h3>
-          <p>Remote clients across every timezone, and in-person consultations available globally. We come to you, wherever you are.</p>
+          <h3>More Control, Less SaaS Sprawl</h3>
+          <p>Where it makes sense, we build local and private workflows so you keep more control over data, costs, and how your stack evolves over time.</p>
         </div>
       </div>
     </div>
@@ -737,135 +896,204 @@
   <!-- PACKAGES -->
   <div class="packages-bg" id="packages">
     <div class="section">
-      <div class="section-label">Packages</div>
+      <div class="section-label">Solutions</div>
       <div class="packages-header">
-        <h2>Choose the level of engagement that fits your ambition.</h2>
-        <p>Each package builds on the last. We tailor every deployment to your exact environment and objectives.</p>
+        <h2>What we can build.</h2>
+        <p>Small wins, real leverage, and systems your team can actually operate after launch.</p>
       </div>
 
-      <!-- TIER 1 -->
       <div class="package-row">
         <div>
-          <div class="pkg-label">Tier 01</div>
-          <div class="pkg-name">Remote Setup</div>
+          <div class="pkg-label">Solution 01</div>
+          <div class="pkg-name">AI Assistants</div>
           <ul class="pkg-features">
-            <li>Full remote AI assistant (including OpenClaw) installation and configuration</li>
-            <li>Optimized system setup tailored to your workflow</li>
-            <li>Step-by-step private key replacement instructions</li>
-            <li>Setup documentation for your specific environment</li>
-            <li>48-hour follow-up support after go-live</li>
+            <li>Custom assistants for support, internal ops, research, and daily workflows</li>
+            <li>Prompt logic, routing, memory, and tool access designed around real tasks</li>
+            <li>Useful behavior over novelty — less “chatbot”, more capable teammate</li>
           </ul>
         </div>
         <div class="pkg-price-col">
-          <div class="pkg-price">$2,000</div>
-          <div class="pkg-price-note">One-time fee</div>
+          <div class="pkg-price">Support</div>
+          <div class="pkg-price-note">Inboxes, team ops, research, internal help</div>
         </div>
         <div class="pkg-action-col">
-          <a href="#contact" class="btn-outline">Inquire</a>
+          <a href="#contact" class="btn-outline">Discuss</a>
         </div>
       </div>
 
-      <!-- TIER 2 -->
       <div class="package-row">
         <div>
-          <div class="pkg-label">Tier 02 &nbsp;·&nbsp; Most Requested</div>
-          <div class="pkg-name">Premium Remote Setup</div>
+          <div class="pkg-label">Solution 02</div>
+          <div class="pkg-name">Automation Systems</div>
           <ul class="pkg-features">
-            <li>Everything in Remote Setup</li>
-            <li>Dedicated hours for custom app and automation builds</li>
-            <li>Business workflow automation consulting</li>
-            <li>Priority support access and extended follow-up period</li>
+            <li>Connect forms, email, chat, spreadsheets, APIs, and internal tools</li>
+            <li>Reduce repetitive handoffs, follow-ups, and copy-paste work</li>
+            <li>Clear failure paths, alerts, and ownership instead of invisible magic</li>
           </ul>
         </div>
         <div class="pkg-price-col">
-          <div class="pkg-price">$5,000</div>
-          <div class="pkg-price-note">One-time fee</div>
+          <div class="pkg-price">Flow</div>
+          <div class="pkg-price-note">Lead capture, follow-up, triage, reporting</div>
         </div>
         <div class="pkg-action-col">
-          <a href="#contact" class="btn-outline solid">Inquire</a>
+          <a href="#contact" class="btn-outline solid">Discuss</a>
         </div>
       </div>
 
-      <!-- TIER 3 -->
       <div class="package-row">
         <div>
-          <div class="pkg-label">Tier 03</div>
-          <div class="pkg-name">In-Person Setup</div>
+          <div class="pkg-label">Solution 03</div>
+          <div class="pkg-name">Internal Dashboards</div>
           <ul class="pkg-features">
-            <li>Everything in Premium Remote Setup</li>
-            <li>On-site hands-on installation at your location</li>
-            <li>Full-day strategy and planning session</li>
-            <li>In-person team training and knowledge transfer</li>
-            <li>Custom infrastructure architecture planning</li>
-            <li>Price varies by location, contact us for a quote</li>
+            <li>Simple interfaces for tasks, alerts, approvals, metrics, and activity</li>
+            <li>One place to see what the system is doing and where humans need to step in</li>
+            <li>Built to feel clean, fast, and operationally obvious</li>
           </ul>
         </div>
         <div class="pkg-price-col">
-          <div class="pkg-price">$10,000</div>
-          <div class="pkg-price-note">Starting price · varies by location</div>
+          <div class="pkg-price">UI</div>
+          <div class="pkg-price-note">Ops visibility, controls, approvals, status</div>
         </div>
         <div class="pkg-action-col">
-          <a href="#contact" class="btn-outline">Get a Quote</a>
+          <a href="#contact" class="btn-outline">Discuss</a>
         </div>
       </div>
 
-      <!-- HARDWARE NOTE -->
+      <div class="package-row">
+        <div>
+          <div class="pkg-label">Solution 04</div>
+          <div class="pkg-name">Local AI / Private Systems</div>
+          <ul class="pkg-features">
+            <li>More privacy, more control, and less dependence on a pile of SaaS tools</li>
+            <li>Practical local-first infrastructure where it makes sense</li>
+            <li>Architecture guidance for teams that want durable AI capability, not a one-off toy</li>
+          </ul>
+        </div>
+        <div class="pkg-price-col">
+          <div class="pkg-price">Infra</div>
+          <div class="pkg-price-note">Private tooling, owned workflows, long-term control</div>
+        </div>
+        <div class="pkg-action-col">
+          <a href="#contact" class="btn-outline">Discuss</a>
+        </div>
+      </div>
+
       <div class="cost-note">
-        <strong>Note on hardware:</strong> Hardware is not included in any package. The cost of hardware varies based on your location, desired specs, and availability. We will advise on the right setup for your needs and help you source it, but hardware is purchased separately and billed directly by the vendor.
-      </div>
-
-      <!-- AI COST NOTE -->
-      <div class="cost-note">
-        <strong>Note on AI provider costs:</strong> Your AI assistant (including OpenClaw) connects to third-party AI providers and those costs are billed separately by the provider. Pricing varies widely based on usage and model selection. We currently operate on <strong>Claude Opus 4.6</strong>, which typically runs <strong>$100 to $200 per month</strong> depending on usage volume. We'll help you understand and manage these costs as part of every setup.
+        <strong>How we approach this:</strong> We prefer practical wins over giant vague transformations. Start with the highest-friction bottleneck, build the smallest useful version fast, and expand once it proves itself in the real workflow.
       </div>
     </div>
   </div>
 
   <hr class="section-divider">
 
-  <!-- FAQ -->
-  <div id="faq">
+  <!-- EXAMPLES -->
+  <div id="examples">
     <div class="section">
-      <div class="section-label">FAQ</div>
-      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 560px; margin-bottom: 48px;">Common questions about OpenClaw setup and what to expect.</h2>
+      <div class="section-label">Examples</div>
+      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 680px; margin-bottom: 48px;">What this looks like in practice.</h2>
 
       <div class="faq-list">
-
         <div class="faq-item">
-          <div class="faq-q">What exactly is OpenClaw and why do I need help installing it?</div>
-          <div class="faq-a">OpenClaw is a self-hosted AI assistant platform that runs on your own hardware and connects to AI providers like Claude. While the software is powerful, configuring it correctly — keys, routing, integrations, security hardening — takes time and expertise. We handle all of that so you start productive on day one instead of troubleshooting for weeks.</div>
+          <div class="faq-q">Support / Inbox Triage</div>
+          <div class="faq-a">Route incoming messages, summarize threads, draft replies, flag urgent items, and keep humans focused on the stuff that actually needs judgment.</div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">How long does an OpenClaw installation take?</div>
-          <div class="faq-a">A standard remote setup takes 1 to 3 business days from first contact to go-live. In-person engagements are typically completed within a single day on-site. We'll give you a specific timeline before we start.</div>
+          <div class="faq-q">Ops Dashboard</div>
+          <div class="faq-a">Track approvals, alerts, queued tasks, and system activity from one clean screen instead of five tabs and a Slack archaeology expedition.</div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">What hardware do I need for OpenClaw?</div>
-          <div class="faq-a">Hardware requirements depend on your use case. A Mac mini is a popular choice for home and small business deployments because of its efficiency, reliability, and macOS compatibility. We will advise on the right specs for your workload during the intake process. Hardware is not included in our packages and is purchased separately.</div>
+          <div class="faq-q">Lead / Client Automation</div>
+          <div class="faq-a">Capture leads, qualify them, trigger follow-ups, sync records, and make sure nothing important dies in somebody’s inbox.</div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">Do I need any technical background to use OpenClaw after setup?</div>
-          <div class="faq-a">No. Our setup packages include documentation and a walkthrough so you can use OpenClaw confidently without any technical background. The Premium and In-Person tiers include extended support time specifically for this.</div>
+          <div class="faq-q">Research / Monitoring</div>
+          <div class="faq-a">Watch sources, summarize changes, surface only what matters, and build a repeatable monitoring loop instead of manually checking everything all day.</div>
         </div>
+      </div>
 
-        <div class="faq-item">
-          <div class="faq-q">What are the ongoing costs after setup?</div>
-          <div class="faq-a">Our fee is one-time. After setup, your only recurring costs are AI provider charges (typically $100 to $200 per month depending on usage and model) and any hardware or hosting costs you choose. There are no subscriptions or retainer fees unless you opt into additional support.</div>
+      <div class="section-label" style="margin-top: 72px;">Dashboard</div>
+      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 700px; margin-bottom: 18px;">A real system, not just slides.</h2>
+      <p style="max-width: 680px; color: var(--muted); line-height: 1.85;">This is the point where AI stops being a pitch deck and starts becoming operational. Clean UI. Real controls. Real workflows. Built to be used day to day.</p>
+
+      <div class="dashboard-shell">
+        <div class="dashboard-topbar">
+          <div class="dashboard-title">Local Service Dashboard</div>
+          <div class="dashboard-status">12 active automations · 3 awaiting approval · 99.2% successful runs</div>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-q">Can you set up OpenClaw for a team or business?</div>
-          <div class="faq-a">Yes. Our Premium Remote and In-Person packages are designed for business deployments and include automation consulting and workflow integration. Contact us to discuss your team size and use case.</div>
+        <div class="dashboard-grid">
+          <div class="dashboard-panel">
+            <h3>Operational Snapshot</h3>
+            <div class="metric-grid">
+              <div class="metric-card">
+                <span class="metric-label">Messages triaged</span>
+                <div class="metric-value">1,284<small>/wk</small></div>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Hours saved</span>
+                <div class="metric-value">37<small>/mo</small></div>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Exceptions</span>
+                <div class="metric-value">4<small>open</small></div>
+              </div>
+            </div>
+            <div class="feed-list">
+              <div class="feed-item">
+                <strong>Inbox assistant escalated 2 high-priority conversations</strong>
+                <span>Customer billing issue and vendor delay flagged for human review with draft responses prepared.</span>
+              </div>
+              <div class="feed-item">
+                <strong>Lead workflow completed with CRM sync</strong>
+                <span>Qualification, follow-up email, and task assignment all finished without manual handoff.</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-panel">
+            <h3>Live Control Surface</h3>
+            <div class="feed-list">
+              <div class="feed-item">
+                <strong>Approvals Queue</strong>
+                <span>3 actions waiting: refund exception, vendor reply send, pricing sheet update.</span>
+              </div>
+              <div class="feed-item">
+                <strong>Monitoring Feed</strong>
+                <span>7 watched sources scanned overnight. 2 material updates summarized and posted to the team channel.</span>
+              </div>
+              <div class="feed-item">
+                <strong>System Health</strong>
+                <span>API routing healthy, retry queue empty, fallback provider available, audit logs current.</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="faq-item">
-          <div class="faq-q">Do you offer support after the setup is complete?</div>
-          <div class="faq-a">All packages include a follow-up support window after go-live. The Remote Setup includes 48 hours of follow-up. Premium and In-Person packages include an extended period. We can discuss ongoing support arrangements for larger deployments.</div>
+      <div class="section-label" style="margin-top: 72px;">Process</div>
+      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 620px; margin-bottom: 0;">How we work.</h2>
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="process-step">Step 01</span>
+          <h3>Understand the workflow</h3>
+          <p>We start with the real process, not the hypothetical future version. Where does work come in, where does it stall, and who has to touch it?</p>
         </div>
-
+        <div class="process-card">
+          <span class="process-step">Step 02</span>
+          <h3>Find the highest-friction bottleneck</h3>
+          <p>We look for repetitive, expensive, or annoying steps that are obvious wins for automation or better tooling.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-step">Step 03</span>
+          <h3>Build the smallest useful version fast</h3>
+          <p>Instead of a giant transformation project, we ship something useful quickly and make sure it earns the next layer of investment.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-step">Step 04</span>
+          <h3>Refine from real use</h3>
+          <p>Once people actually touch it, the truth shows up fast. We use that feedback to harden the workflow and expand intelligently.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -875,12 +1103,12 @@
   <!-- CONTACT -->
   <div id="contact">
     <div class="section">
-      <div class="section-label">Contact</div>
+      <div class="section-label">Let’s Talk</div>
 
       <div class="contact-grid">
         <div class="contact-info">
-          <h3>Let's talk about what you're building.</h3>
-          <p>Whether you're exploring a basic remote setup or need full on-site deployment with custom automation, we'll give you a straight answer on what makes sense for you.</p>
+          <h3>If you already know where time is being wasted, we can probably fix it.</h3>
+          <p>Tell us what feels repetitive, messy, or slower than it should be. We’ll give you a straight answer on what’s worth building, what isn’t, and what the smallest useful version looks like.</p>
           <div class="contact-detail">
             <div class="contact-detail-item">
               <div class="icon">📧</div>
@@ -888,11 +1116,11 @@
             </div>
             <div class="contact-detail-item">
               <div class="icon">🌍</div>
-              <span>Available worldwide, remote and in-person</span>
+              <span>Remote-first, available worldwide</span>
             </div>
             <div class="contact-detail-item">
               <div class="icon">⏱</div>
-              <span>We respond within 24 hours</span>
+              <span>Usually a real reply within 24 hours</span>
             </div>
           </div>
         </div>
@@ -914,22 +1142,23 @@
               <input type="email" id="email" name="Email" placeholder="you@company.com" required />
             </div>
             <div class="field">
-              <label for="package">Package Interest</label>
-              <select id="package" name="Package">
-                <option value="" disabled selected>Select a package</option>
-                <option>Remote Setup ($2,000)</option>
-                <option>Premium Remote Setup ($5,000)</option>
-                <option>In-Person Setup ($10,000+)</option>
+              <label for="package">What do you need?</label>
+              <select id="package" name="Project Type">
+                <option value="" disabled selected>Select a focus</option>
+                <option>AI assistant</option>
+                <option>Workflow automation</option>
+                <option>Internal dashboard</option>
+                <option>Local / private AI system</option>
                 <option>Not sure yet, just exploring</option>
               </select>
             </div>
             <div class="field">
-              <label for="message">Tell us about your setup</label>
-              <textarea id="message" name="Message" placeholder="What are you trying to build or automate? Any existing infrastructure we should know about?"></textarea>
+              <label for="message">Tell us about the bottleneck</label>
+              <textarea id="message" name="Message" placeholder="What feels repetitive, messy, or slower than it should be? What tools are involved today?"></textarea>
             </div>
             <div class="form-submit">
-              <button type="submit" class="btn-primary" style="cursor:pointer; border:none;">Send Message</button>
-              <span class="form-note">No spam. No pressure. Just a real conversation.</span>
+              <button type="submit" class="btn-primary" style="cursor:pointer; border:none;">Start the Conversation</button>
+              <span class="form-note">No spam. No theater. Just a real conversation.</span>
             </div>
           </form>
         </div>
