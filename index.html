@@ -382,7 +382,25 @@
 
     .why-cell h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--white); }
 
-    .why-cell p { font-size: 0.92rem; color: var(--muted); line-height: 1.8; }
+    .why-cell p { font-size: 0.92rem; color: var(--muted); line-height: 1.65; }
+
+    .vertical-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0 42px;
+    }
+
+    .vertical-pill {
+      border: 1px solid rgba(255,242,0,0.22);
+      background: rgba(255,242,0,0.06);
+      color: var(--white);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
 
     @media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; } }
 
@@ -573,17 +591,16 @@
     }
 
     /* FAQ */
-    .faq-list { display: flex; flex-direction: column; gap: 0; max-width: 780px; }
-    .faq-item { border-top: 1px solid var(--border); padding: 28px 0; }
-    .faq-item:last-child { border-bottom: 1px solid var(--border); }
-    .faq-q { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--white); margin-bottom: 12px; line-height: 1.4; }
-    .faq-a { font-size: 0.95rem; color: var(--gray); line-height: 1.75; }
+    .faq-list { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 980px; }
+    .faq-item { border: 1px solid var(--border); padding: 22px; background: rgba(255,255,255,0.015); border-radius: 16px; }
+    .faq-q { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 10px; line-height: 1.35; }
+    .faq-a { font-size: 0.92rem; color: var(--muted); line-height: 1.65; }
 
     .dashboard-shell {
-      margin-top: 56px;
+      margin-top: 30px;
       border: 1px solid var(--border);
       background: linear-gradient(180deg, rgba(20,20,20,0.98) 0%, rgba(10,10,10,1) 100%);
-      border-radius: 10px;
+      border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 30px 80px rgba(0,0,0,0.35);
     }
@@ -748,6 +765,7 @@
       .metric-grid { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .bobify-banner { grid-template-columns: 1fr; }
+      .faq-list { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 640px) {
@@ -930,13 +948,13 @@
         </div>
       </div>
 
-      <h1>Your service business<br>needs one dashboard<br>that runs <em>the work.</em></h1>
+      <h1>Stop running your<br>service business from<br>five tabs and a <em>prayer.</em></h1>
 
-      <p class="hero-sub">Bobify gives local service businesses a custom in-house dashboard for jobs, leads, follow-up, scheduling, reporting, and team visibility. It’s built around how you already operate, and it can run locally on your own PC instead of trapping you in another bloated tool.</p>
+      <p class="hero-sub">Bobify gives local service businesses one custom dashboard for jobs, leads, follow-up, reporting, and team visibility — built around your workflow, and able to run in-house on your own PC.</p>
 
       <div class="hero-actions">
-        <a href="#packages" class="btn-primary">See Bobify</a>
-        <span class="hero-secondary">Local service businesses &nbsp;·&nbsp; In-house dashboard &nbsp;·&nbsp; Built around your workflow</span>
+        <a href="#contact" class="btn-primary">Book a Demo</a>
+        <span class="hero-secondary">Built for operators who are tired of duct-taping the back office</span>
       </div>
 
       <div class="hero-stats">
@@ -968,39 +986,49 @@
   <!-- WHY US -->
   <div id="why">
     <div class="section">
-      <div class="section-label">Value</div>
-      <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); max-width: 680px; margin-bottom: 0;">
-        Built for the messy middle of a local service business.
+      <div class="section-label">Why Bobify</div>
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); max-width: 760px; margin-bottom: 0;">
+        Built for service businesses that are losing time to admin chaos.
       </h2>
+      <div class="vertical-pills">
+        <div class="vertical-pill">HVAC</div>
+        <div class="vertical-pill">Plumbing</div>
+        <div class="vertical-pill">Cleaning</div>
+        <div class="vertical-pill">Roofing</div>
+        <div class="vertical-pill">Electrical</div>
+        <div class="vertical-pill">Landscaping</div>
+        <div class="vertical-pill">Mobile services</div>
+        <div class="vertical-pill">Local field teams</div>
+      </div>
 
       <div class="why-grid">
         <div class="why-cell">
           <div class="icon">🟨</div>
           <h3>Made for owner-operators</h3>
-          <p>Bobify is for businesses where the owner or manager is still too close to the daily chaos. One screen should show what’s booked, what’s waiting, what needs follow-up, and what’s falling behind.</p>
+          <p>See what’s booked, what’s waiting, what needs follow-up, and what’s falling behind — without bouncing between apps.</p>
         </div>
         <div class="why-cell">
           <div class="icon">🖥️</div>
           <h3>Local when it should be local</h3>
-          <p>Bobify can be built to run in-house on a PC, giving service teams more control over access, data, uptime, and how the system evolves without depending on fragile stacks of subscriptions.</p>
+          <p>Run it in-house on a PC when that makes sense. More control, less subscription sprawl.</p>
         </div>
         <div class="why-cell">
           <div class="icon">📊</div>
           <h3>Dashboard-first visibility</h3>
-          <p>If the workflow matters, it should be visible. Bobify puts jobs, leads, callbacks, approvals, missed follow-up, and reporting into one operating view your team can actually use.</p>
+          <p>Jobs, leads, callbacks, approvals, and reporting — one view, one workflow, less guessing.</p>
         </div>
         <div class="why-cell">
           <div class="icon">🔁</div>
           <h3>Automation that earns its keep</h3>
-          <p>We focus on repetitive admin drag, fragmented reporting, missed callbacks, slow handoffs, and status chasing — then turn those into cleaner internal systems with obvious ROI.</p>
+          <p>Fix missed callbacks, admin drag, weak reporting, and slow handoffs with automation that actually pays for itself.</p>
         </div>
       </div>
 
       <div class="bobify-banner">
         <img src="assets/bobify-logo-transparent.png" alt="Bobify logo" />
         <div>
-          <h3>Bobify is the lead offer now.</h3>
-          <p>A custom dashboard that can be built in-house and run locally on your PC. It’s for service businesses that need one practical operating system for jobs, follow-up, reporting, reminders, monitoring, and lightweight automation.</p>
+          <h3>The pitch is simple.</h3>
+          <p>Bobify gives service businesses one operating dashboard for jobs, follow-up, reminders, reporting, and lightweight automation.</p>
         </div>
       </div>
     </div>
@@ -1013,8 +1041,8 @@
     <div class="section">
       <div class="section-label">Solutions</div>
       <div class="packages-header">
-        <h2>Start with Bobify. Expand only where it helps.</h2>
-        <p>Bobify is the main offer: a custom local dashboard for local service businesses. Then we add the automation, monitoring, and local AI that actually makes the shop run cleaner.</p>
+        <h2>What you buy first.</h2>
+        <p>Start with the dashboard. Add the rest only if it makes money or saves real time.</p>
       </div>
 
       <div class="package-row">
@@ -1022,9 +1050,9 @@
           <div class="pkg-label">Solution 01 · Flagship</div>
           <div class="pkg-name">Bobify Dashboard</div>
           <ul class="pkg-features">
-            <li>Custom dashboard designed around jobs, dispatch, follow-up, reporting, approvals, and day-to-day operator work</li>
-            <li>Can be built in-house and run locally on your PC for more control and simpler ownership</li>
-            <li>Clean Bobify-style UI with strong visibility, clear actions, and daily service-team usability</li>
+            <li>Jobs, dispatch, follow-up, approvals, reporting</li>
+            <li>Built around your workflow</li>
+            <li>Can run locally on your PC</li>
           </ul>
         </div>
         <div class="pkg-price-col">
@@ -1041,9 +1069,9 @@
           <div class="pkg-label">Solution 02</div>
           <div class="pkg-name">Workflow Automation</div>
           <ul class="pkg-features">
-            <li>Connect forms, email, chat, spreadsheets, calendars, and internal systems behind the dashboard</li>
-            <li>Reduce repetitive handoffs, follow-up chasing, status checking, and copy-paste work</li>
-            <li>Keep the workflow visible through status, alerts, queues, and exception handling</li>
+            <li>Lead capture, reminders, callbacks, routing</li>
+            <li>Less copy-paste, less chasing, less dropped follow-up</li>
+            <li>Visible status and exception handling</li>
           </ul>
         </div>
         <div class="pkg-price-col">
@@ -1060,9 +1088,9 @@
           <div class="pkg-label">Solution 03</div>
           <div class="pkg-name">Monitoring &amp; Reporting</div>
           <ul class="pkg-features">
-            <li>Watch sites, listings, inboxes, estimates, or recurring data sources automatically</li>
-            <li>Pull scattered signals into one operating view with summaries and alerts</li>
-            <li>Ideal for owners who need visibility without living inside spreadsheets all week</li>
+            <li>Track inboxes, estimates, listings, and recurring data</li>
+            <li>Simple summaries and alerts</li>
+            <li>Weekly visibility without spreadsheet hell</li>
           </ul>
         </div>
         <div class="pkg-price-col">
@@ -1079,9 +1107,9 @@
           <div class="pkg-label">Solution 04</div>
           <div class="pkg-name">Local AI Add-ons</div>
           <ul class="pkg-features">
-            <li>Add one narrow local AI workflow where it truly helps: summarization, extraction, classification, or document search</li>
-            <li>Plug useful AI into Bobify instead of forcing a giant agent stack</li>
-            <li>Keep the solution practical, scoped, and owned by your team</li>
+            <li>One narrow AI workflow only where useful</li>
+            <li>Summaries, extraction, classification, search</li>
+            <li>No giant agent circus</li>
           </ul>
         </div>
         <div class="pkg-price-col">
@@ -1094,7 +1122,7 @@
       </div>
 
       <div class="cost-note">
-        <strong>How we approach this:</strong> We start with the biggest workflow headache — missed follow-up, scattered job status, weak reporting, admin drag — ship the first Bobify operating layer, and only expand if the first build proves itself in real use.
+        <strong>Best first use cases:</strong> missed-call recovery, job status visibility, quote follow-up, weekly reporting, task tracking, dispatch clarity.
       </div>
     </div>
   </div>
@@ -1105,33 +1133,34 @@
   <div id="examples">
     <div class="section">
       <div class="section-label">Examples</div>
-      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 680px; margin-bottom: 48px;">What this looks like in a real local service business.</h2>
+      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 680px; margin-bottom: 24px;">Where it hits hardest.</h2>
+      <p style="max-width: 640px; color: var(--muted); margin-bottom: 30px;">Use Bobify when money is leaking out through weak follow-up, scattered status, or zero visibility.</p>
 
       <div class="faq-list">
         <div class="faq-item">
-          <div class="faq-q">Home services operating dashboard</div>
-          <div class="faq-a">One custom dashboard for jobs, follow-up, customer status, team tasks, estimates, and simple reporting — built to run in-house instead of forcing a bloated SaaS stack.</div>
+          <div class="faq-q">Jobs + dispatch</div>
+          <div class="faq-a">One place for active jobs, next actions, team status, and estimates.</div>
         </div>
 
         <div class="faq-item">
           <div class="faq-q">Office + field visibility</div>
-          <div class="faq-a">Track approvals, alerts, queued tasks, team activity, call-backs, and service status from one Bobify-style screen instead of bouncing between tabs and spreadsheets.</div>
+          <div class="faq-a">See what the office promised, what the field team did, and what still needs action.</div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">Lead capture and missed-call follow-up</div>
-          <div class="faq-a">Capture leads, trigger follow-up, assign action, and make sure missed calls, quote requests, and important callbacks do not disappear between people.</div>
+          <div class="faq-q">Missed-call recovery</div>
+          <div class="faq-a">Catch missed calls, quote requests, and callbacks before they disappear.</div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">Monitoring and weekly reporting</div>
-          <div class="faq-a">Watch recurring sources, summarize changes, collect scattered data, and surface only what matters in one operator-friendly dashboard for the owner or manager.</div>
+          <div class="faq-q">Weekly reporting</div>
+          <div class="faq-a">Know what got done, what slipped, and what needs attention this week.</div>
         </div>
       </div>
 
       <div class="section-label" style="margin-top: 72px;">Dashboard</div>
-      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 700px; margin-bottom: 18px;">Bobify look and feel.</h2>
-      <p style="max-width: 680px; color: var(--muted); line-height: 1.85;">Bright yellow, dark surfaces, rounded cards, strong controls, and one clean operating view. The goal is simple: a service business dashboard that feels fast, obvious, and actually usable by real operators.</p>
+      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 700px; margin-bottom: 14px;">What the product feels like.</h2>
+      <p style="max-width: 620px; color: var(--muted); line-height: 1.7;">Fast. Clear. One operating view. No fluff.</p>
 
       <div class="dashboard-image-wrap">
         <img src="assets/bobify-dashboard-mockup.png" alt="Bobify dashboard visual direction" />
@@ -1140,50 +1169,32 @@
       <div class="dashboard-shell">
         <div class="dashboard-topbar">
           <div class="dashboard-title">Bobify Local Dashboard</div>
-          <div class="dashboard-status">Local-first control · custom workflows · built for in-house ownership</div>
+          <div class="dashboard-status">Built for speed, visibility, and follow-through</div>
         </div>
         <div class="dashboard-grid">
           <div class="dashboard-panel">
-            <h3>Operational Snapshot</h3>
-            <div class="metric-grid">
-              <div class="metric-card">
-                <span class="metric-label">Tasks visible</span>
-                <div class="metric-value">1 view<small>shared</small></div>
-              </div>
-              <div class="metric-card">
-                <span class="metric-label">System location</span>
-                <div class="metric-value">Your PC<small>local</small></div>
-              </div>
-              <div class="metric-card">
-                <span class="metric-label">Workflow style</span>
-                <div class="metric-value">Custom<small>fit</small></div>
-              </div>
-            </div>
+            <h3>Why clients want it</h3>
             <div class="feed-list">
               <div class="feed-item">
-                <strong>Purpose-built for your daily operating mess</strong>
-                <span>Jobs, leads, follow-up, estimates, approvals, reporting, or recurring status checks — the point is to make the messy middle of the business simpler.</span>
+                <strong>One screen</strong>
+                <span>Jobs, callbacks, estimates, approvals, reporting.</span>
               </div>
               <div class="feed-item">
-                <strong>Built in-house, not rented forever</strong>
-                <span>Bobify can be set up as a local operating system for the office, with the flexibility to evolve as the workflow changes across dispatch, admin, and follow-up.</span>
+                <strong>Less leakage</strong>
+                <span>Fewer dropped leads, fewer missed follow-ups, less status chasing.</span>
               </div>
             </div>
           </div>
           <div class="dashboard-panel">
-            <h3>Live Control Surface</h3>
+            <h3>Why it sells</h3>
             <div class="feed-list">
               <div class="feed-item">
-                <strong>Visibility</strong>
-                <span>Know what’s pending, what’s overdue, what changed, and where human action is still needed.</span>
+                <strong>Runs in-house</strong>
+                <span>Local PC when appropriate. More control. Less tool sprawl.</span>
               </div>
               <div class="feed-item">
-                <strong>Automation</strong>
-                <span>Use background workflows for reminders, follow-up, routing, missed-call recovery, scraping, or reporting without hiding the process.</span>
-              </div>
-              <div class="feed-item">
-                <strong>Ownership</strong>
-                <span>Keep the system close to the business: local-first when appropriate, practical, understandable, and easy to extend.</span>
+                <strong>Built around the business</strong>
+                <span>Not generic software. Not another login graveyard.</span>
               </div>
             </div>
           </div>
@@ -1191,27 +1202,27 @@
       </div>
 
       <div class="section-label" style="margin-top: 72px;">Process</div>
-      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 620px; margin-bottom: 0;">How we work.</h2>
+      <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.2rem); max-width: 620px; margin-bottom: 0;">How it starts.</h2>
       <div class="process-grid">
         <div class="process-card">
-          <span class="process-step">Step 01</span>
-          <h3>Understand the workflow</h3>
-          <p>We start with the real process, not the fake polished version. Where do jobs come in, where does follow-up stall, and where would a Bobify dashboard give the clearest lift?</p>
+          <span class="process-step">01</span>
+          <h3>Find the leak</h3>
+          <p>Missed follow-up, weak reporting, messy status, admin drag.</p>
         </div>
         <div class="process-card">
-          <span class="process-step">Step 02</span>
-          <h3>Find the highest-friction bottleneck</h3>
-          <p>We look for repetitive, expensive, or annoying steps that should move into one visible operating system instead of staying scattered across inboxes, calls, and spreadsheets.</p>
+          <span class="process-step">02</span>
+          <h3>Build the first layer</h3>
+          <p>Usually the dashboard. Sometimes one automation first.</p>
         </div>
         <div class="process-card">
-          <span class="process-step">Step 03</span>
-          <h3>Build the smallest useful version fast</h3>
-          <p>Usually that means a first Bobify build, one focused automation, or one reporting layer that solves a real daily pain fast for the office team.</p>
+          <span class="process-step">03</span>
+          <h3>Prove it</h3>
+          <p>If it saves time or money, expand. If not, don’t.</p>
         </div>
         <div class="process-card">
-          <span class="process-step">Step 04</span>
-          <h3>Refine from real use</h3>
-          <p>Once people use it, the real needs show up fast. Then we harden the workflow, tighten the UI, and expand only where the value is obvious.</p>
+          <span class="process-step">04</span>
+          <h3>Scale only what works</h3>
+          <p>No giant transformation theater.</p>
         </div>
       </div>
     </div>
@@ -1226,8 +1237,8 @@
 
       <div class="contact-grid">
         <div class="contact-info">
-          <h3>If your service business needs one clean operating dashboard, start here.</h3>
-          <p>Tell us what feels repetitive, messy, or slower than it should be. If Bobify is the right first solution, we’ll say so. If it isn’t, we’ll tell you what the smaller better first fix is.</p>
+          <h3>If your back office is leaking time and money, start here.</h3>
+          <p>Tell us where the mess is: missed calls, follow-up, estimates, scheduling, reporting, dispatch, or status visibility.</p>
           <div class="contact-detail">
             <div class="contact-detail-item">
               <div class="icon">📧</div>
@@ -1239,7 +1250,7 @@
             </div>
             <div class="contact-detail-item">
               <div class="icon">⏱</div>
-              <span>Usually a real reply within 24 hours</span>
+              <span>Usually a real answer within 24 hours</span>
             </div>
           </div>
         </div>
@@ -1276,7 +1287,7 @@
               <textarea id="message" name="Message" placeholder="What feels repetitive, messy, or slower than it should be? Missed follow-up, scattered job status, reporting, estimates, scheduling, callbacks?"></textarea>
             </div>
             <div class="form-submit">
-              <button type="submit" class="btn-primary" style="cursor:pointer; border:none;">Start the Conversation</button>
+              <button type="submit" class="btn-primary" style="cursor:pointer; border:none;">Book a Demo</button>
               <span class="form-note">No spam. No theater. Just a real conversation.</span>
             </div>
           </form>
